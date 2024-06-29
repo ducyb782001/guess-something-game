@@ -1,0 +1,65 @@
+[
+  {
+    "id": "1",
+    "title": "Đồ ăn",
+    "description": "Tất cả các loại đồ ăn ngon từ nhiều nơi trên thế giới hehe",
+    "image": "/images/food.png",
+    "bgColor": "#fed234",
+    "link": "",
+    "collectionId": "1",
+    "items": [
+      {
+        "id": 1,
+        "title": "Bún bò huế",
+        "image": null
+      },
+      {
+        "id": 2,
+        "title": "Bún đậu mắm tôm",
+        "image": null
+      },
+      {
+        "id": 3,
+        "title": "Phở bò",
+        "image": null
+      },
+      {
+        "id": 4,
+        "title": "Phở gà",
+        "image": null
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Phim hoạt hình",
+    "image": "/images/cartoon.png",
+    "bgColor": "#3e59ff",
+    "link": "",
+    "collectionId": "2"
+  },
+  {
+    "id": "3",
+    "title": "Bóng đá",
+    "image": "/images/football.png",
+    "bgColor": "#34b773",
+    "link": "",
+    "collectionId": "3"
+  },
+  {
+    "id": "4",
+    "title": "Phim hoạt hình",
+    "image": "/images/cartoon.png",
+    "bgColor": "#4811ff",
+    "link": "",
+    "collectionId": "4"
+  },
+  {
+    "id": "5",
+    "title": "Hoa quả",
+    "image": "/images/fruit.png",
+    "bgColor": "#fed234",
+    "link": "",
+    "collectionId": "5"
+  }
+]
