@@ -4,17 +4,23 @@ import React from "react";
 
 function HomePage() {
   const handleOpenPopup = () => {
-    const url = "/test-second";
-    const width = 600;
-    const height = 400;
-    const left = window.screen.width / 2 - width / 2;
-    const top = window.screen.height / 2 - height / 2;
+    const currentLocation = window.location.href;
+    const isMobile = window.innerWidth <= 768;
+    const url = `/test-second?redirectLink=${currentLocation}`;
+    if (isMobile) {
+      window.location.href = url;
+    } else {
+      const width = 600;
+      const height = 400;
+      const left = window.screen.width / 2 - width / 2;
+      const top = window.screen.height / 2 - height / 2;
 
-    window.open(
-      url,
-      "_blank",
-      `toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no,width=${width},height=${height},top=${top},left=${left}`
-    );
+      window.open(
+        url,
+        "_blank",
+        `toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no,width=${width},height=${height},top=${top},left=${left}`
+      );
+    }
   };
 
   return (

@@ -1,10 +1,23 @@
 import { CloseCircleOutlined } from "@ant-design/icons";
 import { Button } from "antd";
 import React from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function SecondHomePage() {
+  const navigation = useNavigate();
+  const location = useLocation();
   const handleClosePopup = () => {
-    window.close();
+    const isMobile = window.innerWidth <= 768;
+    const searchParams = new URLSearchParams(location.search);
+    const redirectLink = searchParams.get("redirectLink");
+
+    if (isMobile) {
+      const newUrl = `${redirectLink}?txHash=123`;
+      window.location.href = newUrl;
+      console.log("🚀 ~ handleClosePopup ~ newUrl:", newUrl);
+    } else {
+      window.close();
+    }
   };
 
   return (
